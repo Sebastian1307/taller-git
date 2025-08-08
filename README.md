@@ -6,9 +6,7 @@ Este taller se hizo como un juego para adivinar un número, con una interfaz est
 A continuación, imágenes del proceso del `git log`:
 
 ## Para probar el juego haz click a este boton
-<a href="[https://tu-url-aqui.com](https://kirbopaisaadivina.vercel.app/)" target="_blank">
-  <img src="https://img.shields.io/badge/Jugar%20ahora-Kirby%20Game-pink?style=for-the-badge&logo=kirby" alt="Botón Jugar" />
-</a>
+[![Botón Jugar](https://img.shields.io/badge/¡Probar%20ahora!-pink?style=for-the-badge&logo=kirby)](https://kirbopaisaadivina.vercel.app/)
 ---
 
 ###  Creacion repositorio
