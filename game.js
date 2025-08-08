@@ -34,4 +34,5 @@ function RevisarRespuesta() {
     mensaje.textContent = texto;
 
     //Si alguien lee esto
+    //saquenme de git
 }
