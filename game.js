@@ -20,4 +20,6 @@ function RevisarRespuesta() {
     } else {
         mensaje.textContent = "¡Tan frio que parece de millos! ";
     }
+
+    //puse este comentario para poder decir que algo cambio jaja salu2
 }
