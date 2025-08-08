@@ -22,17 +22,16 @@ function RevisarRespuesta() {
         texto = "¡Tan frío que parece de Millos!";
     }
 
-    //puse este comentario para poder decir que algo cambio jaja salu2
-    //este tambien
-
-
-    // Mi primer easter egg
     if (respuesta === 13) {
-        texto += " INHALA aqui las tie...........";
+        texto += " INHALA aquí las tie...........";
     }
 
     mensaje.textContent = texto;
 
-    //Si alguien lee esto
-    //saquenme de git
+    if (respuesta !== NumeroXD) {
+        mensaje.classList.add('vibrando');
+        setTimeout(() => {
+            mensaje.classList.remove('vibrando');
+        }, 300);
+    }
 }
