@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Kirby te adivina un numero</title>
+</head>
+
+<body class="bg-blue-300 min-h-screen flex items-center justify-center p-6">
+
+    <div class="w-80 bg-white/90 rounded-xl shadow-xl p-6 mr-8">
+        <h1 class="text-3xl font-bold text-pink-500 mb-4">Kirbo paisa el adivino</h1>
+        <p class="text-gray-700 text-lg">
+            El <Strong>Kirbo</Strong> se comio una paisa y ahora adquirio la habilidad de saber el numero del chance, di tu respuesta y el te dira si es o no es pa ganar el baloto. 
+            Entre más cerca esté, más caliente estará 
+            Pero si se aleja… se va poniendo bien frío .
+        </p>
+    </div>
+
+    <div class="relative w-[1000px] h-[600px] bg-cover bg-center rounded-xl shadow-lg overflow-hidden"
+        style="background-image: url('assets/Background.png')">
+
+        <img src="assets/Kirbo.png" alt="Kirby" class="absolute w-40 top-10 left-10 z-10">
+
+
+        <div id="Kirbodice"
+            class="absolute top-10 left-52 w-96 bg-blue-100 border-4 border-pink-300 rounded-full px-6 py-4 shadow-lg text-lg font-semibold text-gray-800">
+            Qhubo pues mijo, adivine pues el número.
+        </div>
+
+        <div
+            class="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/90 rounded-xl shadow-lg p-6 flex gap-4 items-center">
+            <input id="InputAdivinar" type="number" placeholder="Inserte número aquí XD..."
+                class="text-blue-500 text-xl px-4 py-2 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+            <button onclick="RevisarRespuesta()"
+                class="bg-pink-400 hover:bg-pink-500 text-white px-6 py-2 rounded-md text-lg font-bold transition-all duration-200">Adivinar</button>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
