@@ -8,19 +8,30 @@ function RevisarRespuesta() {
     intentos++;
 
     const diferencia = Math.abs(NumeroXD - respuesta);
+    let texto = "";
 
     if (respuesta === NumeroXD) {
-        mensaje.textContent = `¡Sisas! Lo adivino en ${intentos} intentos. Casi que no manco`;
+        texto = `¡Sisas! Lo adivinó en ${intentos} intentos. Casi que no manco.`;
     } else if (diferencia <= 5) {
-        mensaje.textContent = "¡Mas caliente que adolescente de colegio publico! ";
+        texto = "¡Más caliente que adolescente de colegio público!";
     } else if (diferencia <= 10) {
-        mensaje.textContent = "Caliente como el guaviare ";
+        texto = "Caliente como el Guaviare.";
     } else if (diferencia <= 20) {
-        mensaje.textContent = "Frio como un milo ";
+        texto = "Frío como un Milo.";
     } else {
-        mensaje.textContent = "¡Tan frio que parece de millos! ";
+        texto = "¡Tan frío que parece de Millos!";
     }
 
     //puse este comentario para poder decir que algo cambio jaja salu2
     //este tambien
+
+
+    // Mi primer easter egg
+    if (respuesta === 13) {
+        texto += " INHALA aqui las tie...........";
+    }
+
+    mensaje.textContent = texto;
+
+    //Si alguien lee esto
 }
